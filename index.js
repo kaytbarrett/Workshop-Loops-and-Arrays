@@ -56,5 +56,26 @@ console.log(string + " has " + consonantCount + " consonants and " + vowelCount 
 
 
 //Problem #3
+//With a for loop, write a javascript that takes an array and writes it in reverse order
+
+//For example, if the array is 1 2 3 4, the new reverse array will be 4 3 2 1 
+//This problems specifically says to use a for loop so I will use that, I don't believe I need an if/else statement 
+//I think I will have the for loop go through the index of the array and return the numbers in reverse order using unshift
+
+//To test this code, uncomment out the line you wish to test
+//Be sure to check that the other lines are commented out!
+
+const forwardArray = [1, 2, 3];
+// const forwardArray = [1, 3, 5, 7, 9, 11];
+// const forwardArray = [20, 50, 30, 60, 200];
+// const forwardArray = [1, -1, 2, -3, 5, -8, 13];
+
+let reverseArray = [];
+
+for (let i = 0; i < forwardArray.length; i++) {
+   reverseArray.unshift(forwardArray[i]);
+}
+
+console.log(reverseArray)
 
 //Problem #4
