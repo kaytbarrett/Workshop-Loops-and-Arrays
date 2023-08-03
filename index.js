@@ -18,8 +18,8 @@ let newArray = []
 
 for (let i = 0; i < numArray.length; i++) {
     if (numArray[i] % 2 !== 0) {
-       newArray.push(numArray[i]);
-    } 
+        newArray.push(numArray[i]);
+    }
 }
 
 console.log(newArray)
@@ -45,7 +45,7 @@ let consonantCount = 0;
 
 for (let i = 0; i < string.length; i++) {
     if (string[i] === "a" || string[i] === "e" ||
-    string[i] === "i" || string[i] === "o" || string[i] === "u") {
+        string[i] === "i" || string[i] === "o" || string[i] === "u") {
         vowelCount++;
     } else {
         consonantCount++;
@@ -73,9 +73,32 @@ const forwardArray = [1, 2, 3];
 let reverseArray = [];
 
 for (let i = 0; i < forwardArray.length; i++) {
-   reverseArray.unshift(forwardArray[i]);
+    reverseArray.unshift(forwardArray[i]);
 }
 
 console.log(reverseArray)
 
 //Problem #4
+//Write a javascript code that prints each number 1 to 100 on a new line
+//For each multiple of 3 print, "Fizz" instead of number
+//For each multiple of 5, print "Buzz" instead of number
+//For numbers divisible by 3 and 5, print "FizzBuzz"
+
+//I have not used a while loop yet so I am going to use that to practice
+//I will set num = 1 and while num < 100, I will have the loop check whether the num is divisible by 3 && 5, 3, 5 using the modulo operator
+//I will use if / if else / and else statements to check for divisibility and to console.log Fizz Buzz or FizzBuzz if conditions are met
+
+let num = 1
+
+while (num < 100) {
+    if (num % 3 === 0 && num % 5 === 0 ) {
+        console.log("FizzBuzz");
+    } else if (num % 3 === 0){
+        console.log("Fizz");
+    } else if (num % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(num);
+    }
+    num++;
+}
